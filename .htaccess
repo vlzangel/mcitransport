@@ -1,0 +1,16 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /mcitransport/
+
+
+RewriteRule ^ajax/(.*)  /mcitransport/syte/frontend/ajax/$1 [QSA,L]
+RewriteRule ^css/(.*)   /mcitransport/syte/frontend/recursos/css/$1 [QSA,L]
+RewriteRule ^img/(.*)   /mcitransport/syte/frontend/recursos/imgs/$1 [QSA,L]
+RewriteRule ^js/(.*)    /mcitransport/syte/frontend/recursos/js/$1 [QSA,L]
+RewriteRule ^fonts/(.*)    /mcitransport/syte/frontend/recursos/fonts/$1 [QSA,L]
+
+  RewriteRule ^index\.php$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /mcitransport/index.php [L]
+</IfModule>
