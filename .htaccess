@@ -2,12 +2,11 @@
   RewriteEngine On
   RewriteBase /mcitransport/
 
-
-RewriteRule ^ajax/(.*)  /mcitransport/syte/frontend/ajax/$1 [QSA,L]
-RewriteRule ^css/(.*)   /mcitransport/syte/frontend/recursos/css/$1 [QSA,L]
-RewriteRule ^img/(.*)   /mcitransport/syte/frontend/recursos/imgs/$1 [QSA,L]
-RewriteRule ^js/(.*)    /mcitransport/syte/frontend/recursos/js/$1 [QSA,L]
-RewriteRule ^fonts/(.*)    /mcitransport/syte/frontend/recursos/fonts/$1 [QSA,L]
+	RewriteRule ^ajax/(.*)  /mcitransport/syte/ajax/$1 [QSA,L]
+	RewriteRule ^css/(.*)   /mcitransport/syte/recursos/css/$1 [QSA,L]
+	RewriteRule ^img/(.*)   /mcitransport/syte/recursos/imgs/$1 [QSA,L]
+	RewriteRule ^js/(.*)    /mcitransport/syte/recursos/js/$1 [QSA,L]
+	RewriteRule ^fonts/(.*)    /mcitransport/syte/recursos/fonts/$1 [QSA,L]
 
   RewriteRule ^index\.php$ - [L]
   RewriteCond %{REQUEST_FILENAME} !-f
