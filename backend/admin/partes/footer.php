@@ -41,8 +41,15 @@
             <script src="<?php echo HOME(); ?>admin/recursos/vendor/datatables/dataTables.bootstrap4.js"></script>
             <!-- Custom scripts for all pages-->
             <script src="<?php echo HOME(); ?>admin/recursos/js/sb-admin.min.js"></script>
-            <!-- Custom scripts for this page-->
-            <script src="<?php echo HOME(); ?>admin/recursos/js/sb-admin-datatables.min.js"></script>
+
+            <?php
+                foreach ($CSSs as $css) {
+                    echo '<link href="'.HOME().'modulos'.$PAGE.$css.'.css?v='.time().'" rel="stylesheet">';
+                }
+                foreach ($JSs as $js) {
+                    echo '<script src="'.HOME().'modulos'.$PAGE.$js.'.js?v='.time().'"></script>';
+                }
+            ?>
         </div>
         
     </body>

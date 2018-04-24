@@ -7,12 +7,18 @@
         <meta name="description" content="">
         <meta name="author" content="">
         <title>Dashboard</title>
-        <!-- Bootstrap core CSS-->
-        <link href="<?php echo HOME(); ?>admin/recursos/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <!-- Custom fonts for this template-->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-        
-        <link href="<?php echo HOME(); ?>admin/recursos/css/sb-admin.css" rel="stylesheet">
+
+        <link href="<?php echo HOME(); ?>admin/recursos/vendor/bootstrap/css/bootstrap.min.css?v=<?php echo time(); ?>" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css?v=<?php echo time(); ?>" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+        <link href="<?php echo HOME(); ?>admin/recursos/css/dataTables.bootstrap4.min.css?v=<?php echo time(); ?>" rel="stylesheet">
+        <link href="<?php echo HOME(); ?>admin/recursos/css/sb-admin.css?v=<?php echo time(); ?>" rel="stylesheet">
+        <link href="<?php echo HOME(); ?>admin/recursos/css/tablas.css?v=<?php echo time(); ?>" rel="stylesheet">
+
+        <?php $CSSs = array(); $JSs = array(); ?>
+
+        <script type="text/javascript">
+            var HOME = "<?php echo HOME()."modulos".$PAGE; ?>";
+        </script>
     </head>
 
-    <body class="fixed-nav sticky-footer bg-dark" id="page-top">
+    <body class="fixed-nav sticky-footer bg-dark sidenav-toggled" id="page-top">

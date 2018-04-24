@@ -22,16 +22,13 @@
 			<tr>
 				<td class="info">
 					<div class="titulo">
-						M.C. Int'l Transportation Inc
+						<?php echo _e("seccion_1_titulo"); ?>
 					</div>
 					<div class="subtitulo">
-						"Transportation Specialist"
+						<?php echo _e("seccion_1_subtitulo"); ?>
 					</div>
-					<div>
-						<p>M.C. Int'l Transportation Inc has been providing creative solutions for our customers since 1993. Our customers' satisfaction has always been measured by our exceptional growth and the commitment of our employees to be the most innovative industry leader in the marketplace.</p>
-						<p>We are an Intermodal Carrier having 48 state authority, servicing the international markets and specializing in the transportation and storage of ocean marine containers.</p>
-						<p>We are committed to our task of being the best Intermodal trucking company in the Southeast.  We take great pride in our work and understand what it takes to be the best.  </p>
-						<p>We have worked hard to attract experienced professionals, obtain the latest technology, acquire the physical facility as well as put into place all of the necessary control procedures to insure professional service from start to finish.</p>
+					<div class="contenido">
+						<?php echo _e("seccion_1_contenido", "parrafo"); ?>
 					</div>
 				</td>
 				<td class="mapa">

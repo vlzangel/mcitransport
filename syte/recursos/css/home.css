@@ -80,6 +80,10 @@ html, body {
 		font-size: 18px;
 	}
 
+	.seccion_home_1 .contenido {
+		white-space: pre-line;
+	}
+
 	.seccion_home_1 .mapa {
 		text-align: center;
 	}
