@@ -1,5 +1,5 @@
 <?php
-	include dirname(dirname(dirname(__DIR__))).'/base.php';
+	include (dirname(dirname(__DIR__))).'/base.php';
 
 	extract($_POST);
 
@@ -28,5 +28,3 @@
 	echo json_encode( $respuesta );
 	
 ?>
-
-hoa

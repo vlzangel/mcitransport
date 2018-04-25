@@ -8,6 +8,11 @@ jQuery(document).ready(function(){
 			jQuery(this).serialize(),
 			function(data){
 				console.log( data );
+				if( data.code == 1 ){
+					location.reload();
+				}else{
+					jQuery(".login_error").fadeIn("slow");
+				}
 			}, "json"
 		).fail(function(e){
 			console.log( e );

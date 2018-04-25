@@ -12,6 +12,8 @@
         <link href="admin/recursos/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="admin/recursos/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
         <link href="admin/recursos/css/sb-admin.css" rel="stylesheet">
+        <link href="admin/recursos/css/login.css" rel="stylesheet">
+        
     </head>
 
     <body class="bg-dark">
@@ -30,6 +32,9 @@
                         </div>
                         <input type="submit" class="btn btn-primary btn-block" />
                     </form>
+                    <div class="login_error">
+                        Error, Email or Password invalid
+                    </div>
                     <div class="text-center">
                         <a class="d-block small mt-3" href="register.html">Register an Account</a>
                         <a class="d-block small" href="forgot-password.html">Forgot Password?</a>
