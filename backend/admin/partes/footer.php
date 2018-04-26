@@ -40,7 +40,7 @@
             <script src="<?php echo HOME(); ?>admin/recursos/vendor/datatables/jquery.dataTables.js"></script>
             <script src="<?php echo HOME(); ?>admin/recursos/vendor/datatables/dataTables.bootstrap4.js"></script>
             <!-- Custom scripts for all pages-->
-            <script src="<?php echo HOME(); ?>admin/recursos/js/sb-admin.min.js"></script>
+            <script src="<?php echo HOME(); ?>admin/recursos/js/sb-admin.js"></script>
 
             <?php
                 foreach ($CSSs as $css) {

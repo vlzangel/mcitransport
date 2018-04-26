@@ -1,9 +1,16 @@
+table.dataTable .img_tabla {
+    height: 100px;
+    margin: 0px auto;
+    display: block;
+}
+
 table.dataTable th,
 .dataTables_length *,
 .dataTables_filter *
  {
     font-size: 11px !important;
 }
+
 table.table-bordered.dataTable tbody th, table.table-bordered.dataTable tbody td {
     font-size: 12px !important;
 }
@@ -55,6 +62,7 @@ a:focus, a:focus .media-icon img {
 .enlace{
     cursor: pointer;
     color: blue;
+    padding: 0px 5px;
 }
 
 .enlace:hover{

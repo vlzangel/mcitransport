@@ -17,10 +17,6 @@ jQuery(document).ready(function(){
 		).fail(function(e){
 			console.log( e );
 		});
-
-		console.log("Chao");
 	});
-
-	console.log("Hola");
 
 });

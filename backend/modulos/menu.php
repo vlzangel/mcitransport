@@ -10,15 +10,15 @@
 			"path"   => "services",
 			"icono"  => "fa-server"
 		),
-		"gallery" => array(
-			"titulo" => "Gallery",
-			"path"   => "gallery",
-			"icono"  => "fa-file-image"
-		),
 		"testimonials" => array(
 			"titulo" => "Testimonials",
 			"path"   => "testimonials",
 			"icono"  => "fa-comments"
+		),
+		"gallery" => array(
+			"titulo" => "Gallery",
+			"path"   => "gallery",
+			"icono"  => "fa-file-image"
 		),
 		"request" => array(
 			"titulo" => "Request",

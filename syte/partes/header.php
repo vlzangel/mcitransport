@@ -10,12 +10,20 @@
 		<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
 
 		<link rel="shortcut icon" href="<?php echo HOME(); ?>img/logos/favicon_2.png" >
-		
+
 		<?php
 			setStyles(array(
 				"fuentes",
 				"globales",
 			));
+
+			if( $SESSION->get("user") !== false ){
+				setStyles(array(
+					"/editor/froala_editor",
+					"/editor/froala_style",
+				));
+				echo '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.css">';
+			}
 		?>
 		
 		<?php
@@ -24,7 +32,22 @@
 				"Smooth",
 				"globales"
 			));
+
+			if( $SESSION->get("user") !== false ){
+				echo '
+			        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/codemirror.min.js"></script>
+			        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.3.0/mode/xml/xml.min.js"></script>
+				';
+				setScripts(array(
+					"/editor/froala_editor.min",
+					"/editor/plugins/align.min",
+				));
+			}
 		?>
+
+		<script type="text/javascript">
+			var HOME = "<?php echo HOME(); ?>";
+		</script>
 	</head>
 	<body>
 		<?php

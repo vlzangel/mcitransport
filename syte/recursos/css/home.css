@@ -36,8 +36,9 @@ html, body {
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
     padding: 20px 50px;
     border: solid 2px #FFF;
-    font-family: Dosis;
     text-align: center;
+    font-family: 'Lora';
+    font-style: italic;
 }
 
 /* Animacion */
@@ -78,10 +79,15 @@ html, body {
 	.seccion_home_1 .subtitulo {
 		color: orange;
 		font-size: 18px;
+		padding: 8px 0px 0px;
+	}
+
+	.seccion_home_1 .contenido p {
+		margin: 10px 0px;
 	}
 
 	.seccion_home_1 .contenido {
-		white-space: pre-line;
+		margin-top: 15px;
 	}
 
 	.seccion_home_1 .mapa {
@@ -139,7 +145,7 @@ html, body {
 	    line-height: 45px;
 	}
 
-	.seccion_home_2 span {
+	.seccion_home_2 span p {
 		color: orange;
 	    font-size: 20px;
 	    display: inline-block;
@@ -148,7 +154,7 @@ html, body {
 
 
 /* Sección 3 */
-
+	
 	.seccion_home_3{
 		position: relative;
 		padding: 75px 25px;
@@ -179,6 +185,7 @@ html, body {
 		color: #5a5a5a;
 		text-align: center;
 		font-style: italic;
+		padding: 10px 0px 0px;
 	}
 
 	.seccion_home_3 .item_box {
@@ -236,13 +243,25 @@ html, body {
 		text-align: center;
 		padding: 25px;
 		box-sizing: border-box;
-		height: 1000px;
+		height: auto;
 		background-attachment: fixed;
 		background-position: -1000px 0;
 		background-image: url( ../img/home/rocks_16.jpg);
 		background-repeat: repeat-x;
 		background-size: cover;
 		animation: animatedBackground 30s linear infinite;
+	}
+
+	.seccion_home_4 .service_container {
+		overflow: hidden;
+	}
+
+	.seccion_home_4 .service_box {
+		float: left;
+	    width: 33.33333334%;
+	    box-sizing: border-box;
+	    padding: 10px;
+	    height: 350px;
 	}
 
 	.seccion_home_4 .titulo {
@@ -369,11 +388,14 @@ html, body {
 	    display: block;
 	    width: 100%;
 	    margin: 0px auto;
-	    max-width: 600px;
+	    max-width: 590px;
 	}
 
 	.seccion_home_5 .testimonials_container {
-		max-width: 600px;
+		max-width: 590px;
+		height: 545px;
+		overflow: auto;
+		padding: 0px 15px;
 	}
 
 	.seccion_home_5 .testimonials_box {
@@ -420,6 +442,23 @@ html, body {
 		width: 0px;
 		height: 100%;
 		vertical-align: middle;
+	}
+
+	.seccion_home_5 .testimonials_container::-webkit-scrollbar-track{
+		-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+		border-radius: 5px;
+		background-color: #F5F5F5;
+	}
+
+	.seccion_home_5 .testimonials_container::-webkit-scrollbar{
+		width: 10px;
+		background-color: #F5F5F5;
+	}
+
+	.seccion_home_5 .testimonials_container::-webkit-scrollbar-thumb{
+		border-radius: 5px;
+		-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	    background-color: #5c5c5c;
 	}
 
 /* Seccion 6 */

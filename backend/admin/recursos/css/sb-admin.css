@@ -19,6 +19,15 @@ body.fixed-nav {
   padding-top: 56px;
 }
 
+select.form-control.form-control-sm {
+    margin: 0px 3px;
+}
+
+span.btn.btn-primary {
+    padding: 3px 10px;
+    /* margin: 0px 0px; */
+}
+
 .content-wrapper {
   min-height: calc(100vh - 56px);
   padding-top: 1rem;
@@ -475,4 +484,85 @@ footer.sticky-footer {
   body.sidenav-toggled footer.sticky-footer {
     width: calc(100% - 55px);
   }
+}
+
+
+
+
+
+#modal .info{
+    display: block;
+    padding: 0px 0px 10px;
+}
+
+#modal .modal-content {
+    margin: 50px auto;
+}
+
+#modal p {
+  font-family: 'Open Sans',sans-serif !important;
+    font-size: 20px;
+    text-align: center;
+    color: #11254A;
+}
+
+#modal form {
+  display: block;
+  padding: 20px;
+  margin: 0px;
+}
+
+#modal label {
+    position: relative;    
+    font-family: 'Open Sans',sans-serif !important;
+    font-size: 16px;
+    font-weight: 400;
+    color: #11254A;
+}
+
+#modal label:before {
+    content: '*';
+    position: absolute;
+    top: 2px;
+    left: -10px;
+    color: red;
+}
+
+#modal textarea {
+    resize: none;
+    height: 100px !important;
+    font-family: "Open Sans", sans-serif;
+    padding: 10px;
+}
+
+#modal div#msg {
+    margin-top: 20px;
+}
+
+#modal .val_error{
+    display: none;
+    color: #ff1f1f
+    font-weight: 500;
+    font-size: 13px;
+    padding: 5px 10px;
+    background: #FFF;
+    margin: 2px 0px 0px;
+    border-radius: 3px;
+    font-family: "Open Sans", sans-serif;
+}
+
+#modal .center{
+    text-align: center;
+    padding: 0px;
+}
+
+#modal .center div{
+    display: inline-block;
+}
+
+#modal button.btn.btn-primary {
+    padding: 10px 30px;
+    margin: 20px auto 0px;
+    display: block;
+    text-transform: uppercase;
 }
